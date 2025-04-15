@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${JDBC_URL}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
